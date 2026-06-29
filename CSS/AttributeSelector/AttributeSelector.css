@@ -1,0 +1,31 @@
+/* Attribute selector */
+
+
+
+/* Tagname[attribute] */
+/* Tagname[attribute="value"]     */
+/* Tagname[attribute~="mid-value"]     title    */
+/* Tagname[attribute|="value"] */
+/* Tagname[attribute^="prefix-value"]     correct  */ 
+/* Tagname[attribute$="suffix-value"]     dollar   */ 
+/* Tagname[attribute*="value"] */  
+
+
+
+div[title="Div Tag - 1"] {
+    background-color: lightcoral;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+div[title~="Div"] {
+    background-color: lightgreen;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+div[title^="hello"] {
+    background-color: lightblue;
+    padding: 10px;
+    margin-top: 20px;
+}

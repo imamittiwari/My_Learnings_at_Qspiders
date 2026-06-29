@@ -1,0 +1,191 @@
+/* Pseudo class Selectors */
+
+/*
+1. : is()
+2. :not()
+3. :has()
+4. :first-child
+5. :last-child
+6. :nth-child()
+7. :nth-last-child()
+8. :first-of-type
+9. :last-of-type
+10. :nth-of-type()
+11. :nth-last-of-type()
+12. :only-child
+13. :only-of-type
+14. :empty
+15. :root
+16. :hover
+17. :active
+18. :focus
+19. :visited
+20. :link
+21. :checked
+22. :disabled
+23. :enabled
+24. :required
+25. :optional
+26. :valid
+27. :invalid
+28. :in-range
+29. :out-of-range
+30. :read-only
+31. :read-write
+32. :default
+33. :placeholder-shown
+34. :autofill
+35. :current
+36. :past
+
+/* main :first-child :first-child {
+    color: red;
+    
+}
+main :first-child :last-child { 
+    color: blue; 
+}
+
+
+main :last-child :nth-child(2) {
+    color: green;
+}*/
+
+
+
+/*
+
+/* find parent div whose child is <p> and change the color of the parent div to red */
+div:has(p) {
+    color: red;
+}
+
+/* find parent div whose child is not <p> and change the color of the parent div to blue */
+div:not(:has(p)){
+    color: blue;
+}
+
+/* Hover effect */
+
+article{
+    background-color: lightgray;
+    padding: 10px;
+    margin-top: 20px;
+    height: 100px;
+    width: 200px;
+}
+article:hover {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    background-color: lightblue;
+    border-radius: 30px;
+    border: 2px solid blue;
+    transition: all 0.9s ease;
+}
+
+/* Check the stages of Link or states of link */
+/* not visited link */
+a:link {
+    color: peru;
+}
+/* active link */
+a:active {
+    color: green;
+}
+
+/* visited link */
+a:visited {
+    color: slateblue;
+}
+
+/* focus*/
+/* focus-visible */
+/* focus-within */
+
+form{
+    width: 300px;
+    height: 200px;
+    background-color: lightyellow;
+    border: 2px solid orange;
+    padding: 10px;
+}
+
+form div{
+    margin-bottom: 10px;
+}
+form:focus-within {
+    background-color: lightgreen;
+    border: 2px solid green;
+}
+form:in-range {
+    background-color: lightcoral;
+}
+
+
+/*-------------- Day 4----------*/
+/*--------------Pseudo element selectors */
+/*
+1. ::first-line
+2. ::first-letter
+3. ::before
+4. ::after
+5. ::placeholder
+6. ::selection
+7. ::backdrop
+8. ::marker
+*/
+
+
+/* Pseudo element selector */
+span {
+    display: inline-block;
+}
+
+span::first-letter{
+    color: blue;
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+H1::first-letter {
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+div::first-line {
+    background-color: yellow;
+}
+
+*::selection {
+    background-color: lightgreen;
+    color: black;
+}
+
+
+ul li::marker {
+    content: "👉";
+    
+}
+
+input::placeholder {
+    color: rgb(255, 0, 0);
+    font-style: italic;
+}
+
+h4::before {
+    content: " Mahendra ";
+
+}
+
+h4::after {
+    content: " Dhoni";
+    
+}
+

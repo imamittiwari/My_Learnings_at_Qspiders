@@ -1,0 +1,20 @@
+h1 {
+    font-family: "Caveat", cursive;
+    color: red;
+    
+}
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    text-align: center;
+    text-shadow: 0px 10px 10px #fff
+}
+
+div p {
+    color: #fff;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+}
