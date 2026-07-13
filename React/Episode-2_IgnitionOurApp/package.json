@@ -1,0 +1,24 @@
+{
+  "name": "episode-2_ignitionourapp",
+  "version": "1.0.0",
+  "description": "Episode 2 ingniting our App",
+  "keywords": [
+    "Learning",
+    "React"
+  ],
+  "homepage": "https://github.com/imamittiwari/My_Learnings_at_Qspiders#readme",
+  "bugs": {
+    "url": "https://github.com/imamittiwari/My_Learnings_at_Qspiders/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imamittiwari/My_Learnings_at_Qspiders.git"
+  },
+  "license": "ISC",
+  "author": "admin",
+  "type": "commonjs",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  }
+}
