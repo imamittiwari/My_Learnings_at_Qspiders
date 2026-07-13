@@ -17,11 +17,17 @@
   "license": "ISC",
   "author": "admin",
   "type": "commonjs",
-  "main": "App.js",
   "scripts": {
     "test": "jest"
   },
   "devDependencies": {
     "parcel": "^2.16.4"
-  }
+  },
+  "dependencies": {
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "browserslist": [
+    "last 2 Chrome version"
+  ]
 }
