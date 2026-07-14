@@ -1,0 +1,30 @@
+{
+  "name": "episode-3_laying_the_foundation",
+  "version": "1.0.0",
+  "description": "Learning React Episode - 3 : Laying the foundation",
+  "keywords": [
+    "foundation"
+  ],
+  "homepage": "https://github.com/imamittiwari/My_Learnings_at_Qspiders#readme",
+  "bugs": {
+    "url": "https://github.com/imamittiwari/My_Learnings_at_Qspiders/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imamittiwari/My_Learnings_at_Qspiders.git"
+  },
+  "license": "ISC",
+  "author": "admin",
+  "type": "commonjs",
+ 
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "dependencies": {
+    "parcel": "^2.16.4",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  }
+}
