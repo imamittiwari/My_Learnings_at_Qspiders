@@ -762,3 +762,78 @@ Babel transpiles JSX to `React.createElement()`:
 ### 🔑 One-Liner Summary
 
 > Components are **reusable JS functions** that return JSX, named in **PascalCase**, accept **props** (read-only data), and compose together to build UI. **Functional components with Hooks** are the modern industry standard.
+
+---
+
+# 📝 Today's Learning Summary — Episode 3
+
+Here's a step-by-step recap of everything covered in this episode:
+
+### Step 1: Development vs Production Scripts
+- `npm run start` → starts **development server**
+- `npm run build` → creates **production build**
+- Scripts must be defined in `package.json` first
+
+### Step 2: What is JSX?
+- JSX = **JavaScript XML** — a syntax extension for React
+- JSX is **NOT valid JavaScript** — browsers cannot understand it directly
+- JSX gets **transpiled by Babel** into `React.createElement()` calls
+- JSX makes React code cleaner and more readable
+
+### Step 3: What is Babel?
+- Babel = **JavaScript compiler/transpiler**
+- Works in **3 phases**: Parsing → Transformation → Code Generation
+- `@babel/preset-react` → converts JSX to `React.createElement()`
+- `@babel/preset-env` → converts modern JS (ES6+) to backward-compatible JS
+- Parcel has Babel built-in — no manual setup needed
+
+### Step 4: JSX Attributes (Homework)
+- JSX uses **camelCase** for attributes (`className`, `onClick`, `tabIndex`)
+- `style` takes a **JavaScript object** with camelCase CSS properties: `{{ color: "red" }}`
+- HTML `class` → JSX `className`, HTML `for` → JSX `htmlFor`
+- `aria-*` and `data-*` attributes keep their hyphenated form
+
+### Step 5: `<img>` and `<a>` Tags in JSX (Homework)
+- `<img />` must be **self-closing** with a closing slash
+- Required attributes: `src` and `alt`
+- `<a>` needs closing tag: `<a>...</a>`
+- Always use `rel="noopener noreferrer"` with `target="_blank"`
+
+### Step 6: Components in React
+- A component = **reusable function** that returns JSX
+- **Two types**: Class Components (legacy) vs Functional Components (industry standard ✅)
+- Functional components are preferred because of **Hooks**, less code, better performance
+- Name must start with **capital letter** (PascalCase)
+- Must return a **single root element** (use Fragment `<>...</>`)
+- **Props are read-only** — never modify them
+
+### Step 7: Props
+- Props = data passed from **parent → child** (one-way flow)
+- Can be any data type: string, number, boolean, array, object, function
+- Props are **immutable** — child cannot modify parent's data
+
+### Step 8: JavaScript Expressions in JSX `{}`
+- `{}` can contain **expressions** (variables, math, function calls, ternaries, `.map()`, logical `&&`)
+- `{}` cannot contain **statements** (`if`, `for`, `switch`, variable/function declarations)
+- Use ternary `? :` instead of `if/else`, use `.map()` instead of `for` loops
+
+### Step 9: Component Composition
+- **Composition** = combining small components to build complex UIs
+- `props.children` → pass JSX between opening/closing tags (like a slot)
+- **Named props** → pass JSX as regular props for multiple slots
+- **Specialization** → one component is a specific case of another (`WelcomeDialog` extends `Dialog`)
+- Use **composition**, never inheritance
+
+### Step 10: XSS Prevention in JSX
+- React **automatically escapes** all values inside `{}` — converts `<`, `>`, `"`, `'`, `&` to HTML entities
+- `dangerouslySetInnerHTML` is the only way to bypass escaping — name is intentionally scary
+- Never use `dangerouslySetInnerHTML` with **user-generated content**
+- Always **sanitize** HTML server-side if you must use it
+
+### Step 11: Why Capital Letter Matters
+- `<div>` → `React.createElement("div", ...)` → HTML element (string arg)
+- `<Header>` → `React.createElement(Header, ...)` → Custom component (function arg)
+
+---
+
+> **🎯 Final Takeaway:** React components are **reusable JS functions** that return JSX, accept props, and compose together. **Functional components + Hooks** are the modern standard. JSX is transpiled by Babel, auto-escapes against XSS, and supports dynamic expressions via `{}`.
