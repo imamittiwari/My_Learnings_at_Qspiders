@@ -1,0 +1,6 @@
+.env
+DSA/
+
+node_modules/
+dist/
+.parcel-cache/

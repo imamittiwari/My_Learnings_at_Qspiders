@@ -1,9 +1,9 @@
 {
-  "name": "episode-3_laying_the_foundation",
+  "name": "react",
   "version": "1.0.0",
-  "description": "Learning React Episode - 3 : Laying the foundation",
+  "description": "\"react learning\"",
   "keywords": [
-    "foundation"
+    "react"
   ],
   "homepage": "https://github.com/imamittiwari/My_Learnings_at_Qspiders#readme",
   "bugs": {
@@ -16,7 +16,6 @@
   "license": "ISC",
   "author": "admin",
   "type": "commonjs",
- 
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",

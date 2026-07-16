@@ -1,6 +1,5 @@
-.env
 DSA/
-
-React/Episode-2_IgnitionOurApp/node_modules/
-React/Episode-2_IgnitionOurApp/dist/
-React/Episode-2_IgnitionOurApp/.parcel-cache/
+React/src/days/Day04/download.png
+React/node_modules/
+React/.parcel-cache/
+React/dist
