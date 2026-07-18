@@ -1,4 +1,4 @@
-import resObj from '../utils/mockData';         // default imports
+      // default imports
 import { CDN_URL } from '../utils/constants';   // named imports
 
 // dynamically passing data to components
