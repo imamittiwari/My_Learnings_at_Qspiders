@@ -24,6 +24,7 @@
   "dependencies": {
     "parcel": "^2.16.4",
     "react": "^19.2.7",
-    "react-dom": "^19.2.7"
+    "react-dom": "^19.2.7",
+    "react-router-dom": "^6.30.4"
   }
 }
