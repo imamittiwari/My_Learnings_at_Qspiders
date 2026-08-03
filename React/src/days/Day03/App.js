@@ -9,6 +9,8 @@ const root = ReactDOM.createRoot(document.getElementById("root")); // createRoot
 const jsxHeading = <h1 className="jsx_heading" tabIndex="5">Episode 3: Laying the Foundation</h1>
 
 
+
+
 // react element
 // const heading = (
 //   <h2 className="head" tabIndex="5">

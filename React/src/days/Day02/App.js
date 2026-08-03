@@ -8,6 +8,8 @@ import ReactDOM from "react-dom/client"; // Import the ReactDOM library to rende
 const heading = React.createElement("h1", { id: "heading" }, "Igniting Our First React App rocket-imoji");  // React Job is to create a virtual DOM and then render it to the actual DOM.
 
 
+
+
 const root = ReactDOM.createRoot(document.getElementById("root")); // ReactDOM is responsible for rendering the virtual DOM to the actual DOM.  
 
 

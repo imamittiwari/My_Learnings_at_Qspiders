@@ -11,8 +11,8 @@ class UserClass extends React.Component {
         }
     };
 
-    componentDidMount(){
-        console.log("Component Did Mount is called")
+    async componentDidMount(){
+          
     }
 
     render() {

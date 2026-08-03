@@ -7,6 +7,8 @@
 const heading = React.createElement("h1", { id: "heading" }, "Hello World! from React");  // React Job is to create a virtual DOM and then render it to the actual DOM.
 
 
+
+
 console.log(heading); // Log the virtual DOM to the console. it is a JavaScript object that represents the structure of the UI. It contains information about the type of element, its attributes, and its children.
 
 
